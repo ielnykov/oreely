@@ -35,14 +35,36 @@
 		    					</div>
 			    			</div>
 						</form>
-				    		
-				    		
 				    </div>
 		    	</div>
 	    	</div>
 	    </div>
+	    
+		<h3 class="panel-title">Results</h3>
+	    
+	    <div class="row">
+			<div class="col-md-10 col-md-offset-1">
+
+				<table data-toggle="table" class="table table-striped">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Year</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--  list title and year ----------------------------------------------------------- -->
+						<tr th:each="movie : ${movies}">
+							<td th:text="${movie.title}"></td>
+							<td th:text="${#calendars.format(movie.release_date,'dd.MM.yyyy')}"></td>
+							<td><a th:href="@{/add(id=${movie.id})}">Add</a></td>
+						</tr>
+						<!--  list title and year ----------------------------------------------------------- -->
+					</tbody>
+				</table>
+			</div>
     </div>
 	<!--  End of container -->
-	
+	<div th:replace="~{includes/bootstrapJS :: bootstrapJS}" />	
 </body>
 </html>
