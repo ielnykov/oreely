@@ -1,4 +1,5 @@
 package at.fh.swenga.model;
+
 import java.util.Calendar;
 import java.util.Date;
 

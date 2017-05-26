@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<div th:replace="~{includes/bootstrapMeta :: bootstrapMeta}" />
+<title>Register</title>
+<div th:replace="~{includes/bootstrapCSS :: bootstrapCSS}" />
+</head>
+<body>
+	
+	<div class="container">
+        <div class="row centered-form">
+	        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+	        	<div class="panel panel-default">
+	        		<div class="panel-heading">
+				    	<h3 class="panel-title">Search</h3>
+				 	</div>
+				 	<div class="panel-body">
+				 			
+			    		<form role="form">
+			    			<div class="row">
+			    				
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<select class="form-control">
+			    							<option value="Movie">Movie</option>
+										    <option value="User">User</option>
+										    <option value="Genre">Genre</option>
+										</select>
+			    					</div>
+			    				</div>
+		    					<div class="form-group">
+		    						<input type="text" name="keywords" id="keywords" class="form-control input-sm" placeholder="Keyword(s)">
+		    					</div>
+			    			</div>
+						</form>
+				    		
+				    		
+				    </div>
+		    	</div>
+	    	</div>
+	    </div>
+    </div>
+	<!--  End of container -->
+	
+</body>
+</html>
