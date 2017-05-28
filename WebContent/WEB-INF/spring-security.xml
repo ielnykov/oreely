@@ -8,7 +8,7 @@
 		<intercept-url pattern="/login" access="permitAll" />
 		<intercept-url pattern="/**" access="hasRole('USER')" />
 		<form-login login-page="/login" />
-		<logout logout-success-url="/login" logout-url="/logout" />
+		<logout logout-success-url="/login" logout-url="/logout" />		
 	</http>
 
 	<authentication-manager>
